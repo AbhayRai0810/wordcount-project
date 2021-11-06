@@ -1,0 +1,14 @@
+<h1> Counting of words in a sentence</h1>
+
+
+<h2>you have entered following text : </h2>
+{{ fulltext }}
+<h2>and number of word is </h2> {{ count }}
+
+<h1> Word count </h1>
+{% for word, counttotal in sortedword %}
+
+{{ word }} -- {{ counttotal }}
+<br>
+
+{% endfor %}
